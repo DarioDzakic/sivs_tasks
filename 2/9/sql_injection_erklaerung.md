@@ -22,11 +22,6 @@ Whitelist-basierte Validierung durchführen. Nur erlaubte Muster, Datentypen und
 ### 3. Datenbankberechtigungen beschränken
 Anwenden des Principle of Least Privilege: Datenbankbenutzer erhalten nur notwendige Permissions (z.B. SELECT und INSERT, kein DROP oder ALTER).
 
-### 4. Escaping von Sonderzeichen
-Falls Prepared Statements nicht möglich: Spezielle Zeichen mit datenbankspezifischen Escaping-Funktionen neutralisieren.
-
-### 5. Fehlerbehandlung
+### 4. Fehlerbehandlung
 Generische Fehlermeldungen an Benutzer zeigen. Detaillierte SQL-Fehler nur intern loggen, um Information Disclosure zu verhindern.
 
-### 6. Web Application Firewall (WAF)
-Überwachen und Filtern verdächtiger SQL-Patterns als zusätzliche Schutzschicht.
